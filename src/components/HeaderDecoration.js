@@ -10,7 +10,7 @@ export const HeaderDecoration = () => (
         <img alt="Hojas" className="w-28 absolute -right-4 -bottom-4 xs:w-36 sm:w-40 md:w-56 lg:w-96 xl:w-[30rem]" src={images.hojas2} />
 
         <div className="w-full absolute inset-y-0 flex flex-col items-center justify-center">
-            <div className="w-content rounded-full shadow-lg shadow-white">
+            <div className="w-content rounded-full shadow-xl shadow-white">
                 <img alt="Logo" className="w-28 xs:w-40 sm:w-56 md:w-72 lg:w-96 xl:w-[30rem]" src={images.logo} />
             </div>
                 
