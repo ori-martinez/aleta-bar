@@ -1,11 +1,11 @@
 /* Components */
 import { HeaderDecoration } from '../components/HeaderDecoration';
 import { NavbarMenu } from '../components/navbars/NavbarMenu';
+import { SectionMenu } from '../components/sections/SectionMenu';
 /* Hooks */
 import { useState } from 'react';
 /* Utils */
 import { sections } from '../utils/helpers';
-/* import { SectionMenu } from '../components/SectionMenu'; */
 
 // PAGINA
 /* Menú del Restaurante */
@@ -30,11 +30,11 @@ export const Menu = () => {
                     setSection={setSection}
                 />
                 
-                {/* <SectionMenu
+                <SectionMenu
                     dishes={section.dishes}
                     time={section.time}
                     title={section.title}
-                /> */}
+                />
             </div>
         </div>
     );

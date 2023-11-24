@@ -7,6 +7,7 @@ module.exports = {
                 'aquamarine': '#28B0B5',
                 'blue-dark': '#12141C',
             },
+            screens: { 'xs': '400px' },
         },
     },
     plugins: [],

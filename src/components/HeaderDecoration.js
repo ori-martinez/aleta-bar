@@ -5,16 +5,16 @@ import { images } from '../utils/helpers';
 /* Cabecera Decorada */
 export const HeaderDecoration = () => (
     <div className="w-full relative overflow-hidden">
-        <img alt="Hojas" className="w-28 absolute -top-4 -left-4 sm:w-40 md:w-48 lg:w-64" src={images.hojas1} />
-        <img alt="Wall" className="-mt-2 w-full sm:-mt-8 md:-mt-16 lg:-mt-32 xl:-mt-56" src={images.wall} />
-        <img alt="Hojas" className="w-28 absolute -bottom-4 -right-4 sm:w-40 md:w-48 lg:w-64" src={images.hojas2} />
+        <img alt="Wall" className="-mt-2 w-full xs:-mt-4 sm:-mt-8 md:-mt-16 lg:-mt-20 xl:-mt-24" src={images.wall} />
+        <img alt="Hojas" className="w-28 absolute -left-4 -top-4 xs:w-36 sm:w-40 md:w-56 lg:w-96 xl:w-[30rem]" src={images.hojas1} />
+        <img alt="Hojas" className="w-28 absolute -right-4 -bottom-4 xs:w-36 sm:w-40 md:w-56 lg:w-96 xl:w-[30rem]" src={images.hojas2} />
 
-        <div className="-mt-6 w-full inset-y-0 absolute flex flex-col items-center justify-center">
-            <div className="w-content flex items-center justify-center rounded-full shadow-lg shadow-white">
-                <img alt="Logo" className="w-36 sm:w-56 md:w-72 lg:w-96 xl:w-[30rem]" src={images.logo} />
+        <div className="w-full absolute inset-y-0 flex flex-col items-center justify-center">
+            <div className="w-content rounded-full shadow-xl shadow-white">
+                <img alt="Logo" className="w-28 xs:w-40 sm:w-56 md:w-72 lg:w-96 xl:w-[30rem]" src={images.logo} />
             </div>
-
-            <img alt="Bienvenido" className="-mt-8 w-24 sm:-mt-10 sm:w-40 md:-mt-14 md:w-56 lg:-mt-20 lg:w-64 xl:-mt-28 xl:w-80" src={images.welcome} />
+                
+            <img alt="Bienvenido" className="w-32 xs:w-44 sm:w-60 md:w-84 lg:w-[28rem] xl:w-[32rem]" src={images.welcome} />
         </div>
     </div>
 );
