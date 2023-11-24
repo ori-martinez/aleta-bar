@@ -14,7 +14,7 @@ export const NavbarMenu = ({ activeSection, setActiveSection, sections, setSecti
                 setSection(sections[index]);
             }}
         >
-            <span className=" text-[0.6rem] text-blue-dark font-bold whitespace-nowrap uppercase sm:text-xs md:text-sm lg:text-base">{ item.title }</span>
+            <span className="text-[0.6rem] text-blue-dark font-bold whitespace-nowrap uppercase sm:text-xs md:text-sm lg:text-base">{ item.title }</span>
         </button>
     ));
 
