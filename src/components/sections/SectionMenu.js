@@ -3,14 +3,14 @@ import { ButtonFood } from '../buttons/ButtonFood';
 
 // COMPONENTE
 /* Sección del Menú */
-export const SectionMenu = ({ dishes, time, title }) => {
+export const SectionMenu = ({ dishes, time, title, onClick }) => {
     // CONSTANTES
     /* Nuevo Arreglo de los Platillos de la Sección */
     const resultDishes = [];
 
     dishes.forEach((item, index) => resultDishes.push(
         <div className="py-4 w-full grid grid-cols-3 gap-x-4 place-items-center md:gap-x-8 lg:gap-x-12 xl:gap-x-16" key={index}>
-            <ButtonFood img={item.img} name={item.name} />
+            <ButtonFood img={item.img} name={item.name} onClick={() => onClick(item)} />
 
             <div className="w-full col-span-2">
                 <p className="mb-2 flex flex-wrap flex-row items-center justify-between text-sm text-aquamarine font-bold xs:text-base sm:text-lg md:text-xl lg:text-2xl">
