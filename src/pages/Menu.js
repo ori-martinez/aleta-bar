@@ -6,6 +6,7 @@ import { SectionMenu } from '../components/sections/SectionMenu';
 import { useState } from 'react';
 /* Utils */
 import { sections } from '../utils/helpers';
+import { Footer } from '../components/Footer';
 
 // PAGINA
 /* Menú del Restaurante */
@@ -14,10 +15,9 @@ export const Menu = () => {
     const [ activeSection, setActiveSection ] = useState(0);        /* Index de la Sección Activa */
     const [ section, setSection ] = useState(sections[0]);          /* Sección del Menú Activa */
 
-    
     // RETORNO
     return (
-        <div className="min-h-screen bg-blue-dark text-white">
+        <div className="min-h-screen relative bg-blue-dark text-white">
             {/* Cabecera Decorada */}
             <HeaderDecoration />
 
@@ -29,13 +29,17 @@ export const Menu = () => {
                     sections={sections}
                     setSection={setSection}
                 />
-                
+
+                {/* Platillos de la Sección */}
                 <SectionMenu
                     dishes={section.dishes}
                     time={section.time}
                     title={section.title}
                 />
             </div>
+
+            {/* Footer */}
+            <Footer />
         </div>
     );
 }
