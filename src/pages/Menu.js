@@ -5,8 +5,9 @@ import { SectionMenu } from '../components/sections/SectionMenu';
 /* Hooks */
 import { useState } from 'react';
 /* Utils */
-import { sections } from '../utils/helpers';
+import { images, sections } from '../utils/helpers';
 import { Footer } from '../components/Footer';
+import { ModalFood } from '../components/modals/ModalFood';
 
 // PAGINA
 /* Menú del Restaurante */
@@ -14,14 +15,23 @@ export const Menu = () => {
     // CONSTANTES
     const [ activeSection, setActiveSection ] = useState(0);        /* Index de la Sección Activa */
     const [ section, setSection ] = useState(sections[0]);          /* Sección del Menú Activa */
+    const [ open, setOpen ] = useState(false);                      /* Estado de Apertura del Modal */
+    const [ selectedDish, setSelectedDish ] = useState({});         /* Platillo Seleccionado */
+
+    // FUNCIONES
+    /* Funcionalidad del Modal para la Muestra de un Platillo */
+    const showDish = (dish) => {
+        setSelectedDish(dish);
+        setOpen(!open);
+    }
 
     // RETORNO
     return (
-        <div className="min-h-screen relative bg-blue-dark text-white">
+        <div className="w-full min-h-screen relative bg-blue-dark text-white">
             {/* Cabecera Decorada */}
             <HeaderDecoration />
 
-            <div className="mx-4 relative sm:mx-12 md:mx-28 lg:mx-48">
+            <div className="z-10 mx-4 pb-6 relative xs:pb-32 sm:pb-40 sm:mx-12 md:pb-60 md:mx-24 lg:pb-96 lg:mx-40 xl:pb-[38rem]">
                 {/* Menú de las Secciones */}
                 <NavbarMenu
                     activeSection={activeSection}
@@ -33,13 +43,27 @@ export const Menu = () => {
                 {/* Platillos de la Sección */}
                 <SectionMenu
                     dishes={section.dishes}
+                    onClick={showDish}
                     time={section.time}
                     title={section.title}
                 />
             </div>
 
+            <img alt="Hojas" className='z-0 w-screen absolute bottom-0' src={images.hojas3} />
+            
             {/* Footer */}
             <Footer />
+
+            {// CONDICIONAL
+            /* Comprobación de la Existencia de un Platillo Seleccionado */
+            Object.keys(selectedDish).length !== 0 && (
+                /* Modal para la Muestra de un Platillo */
+                <ModalFood
+                    dish={selectedDish}
+                    onClose={showDish}
+                    open={open}
+                />
+            )}
         </div>
     );
 }
