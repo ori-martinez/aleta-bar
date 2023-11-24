@@ -5,7 +5,7 @@ import { NavbarMenu } from '../components/navbars/NavbarMenu';
 import { useState } from 'react';
 /* Utils */
 import { sections } from '../utils/helpers';
-import { SectionMenu } from '../components/SectionMenu';
+/* import { SectionMenu } from '../components/SectionMenu'; */
 
 // PAGINA
 /* Menú del Restaurante */
