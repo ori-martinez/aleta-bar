@@ -1,7 +1,6 @@
 // CONSTANTES
 /* Imágenes */
 export const images = {
-    food: require('../assets/img-test.jpg'),
     hojas1: require('../assets/hojas-1.png'),
     hojas2: require('../assets/hojas-2.png'),
     hojas3: require('../assets/hojas-3.png'),
@@ -66,6 +65,7 @@ export const sections = [
             { description: 'Mojito / Margarita / Piña Colada / Cuba Libre / Pape Ron', img: images.logo, name: 'Cocteles Clásicos', price: 10, },
             { description: 'Nacionales e internacionales', img: images.logo, name: 'Cervezas', price: 10, },
             { description: 'Smirnoff / Tequila (Shot) / Promo del Día', img: images.logo, name: 'Promos', price: 10, },
+            { description: 'Agua Mineral / Gatorade / Refrescos', img: images.logo, name: 'Sin Alcohol', price: 10, },
         ],
         time: null,
         title: 'Bebidas',
