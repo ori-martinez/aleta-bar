@@ -1,5 +1,5 @@
-/* Constants */
-import { images } from '../constants/helpers';
+/* Utils */
+import { images } from '../utils/helpers';
 
 // COMPONENTE
 /* Cabecera Decorada */
