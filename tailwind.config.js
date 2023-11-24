@@ -4,8 +4,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'aquamarine': '#66B1C6',
-                'blue-dark': '#101528',
+                'aquamarine': '#28B0B5',
+                'blue-dark': '#12141C',
             },
         },
     },

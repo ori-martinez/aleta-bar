@@ -8,3 +8,6 @@ export const images = {
     wall: require('../assets/wall.png'),
     welcome: require('../assets/welcome.png'),
 }
+
+/* Secciones */
+export const sections = [ 'Para Comenzar', 'Hora del Sabor', 'Los Fuertes', 'Bebidas', ]
