@@ -23,7 +23,7 @@ export const SectionMenu = ({ dishes, time, title }) => {
 
     // RETORNO
     return (
-        <div className="pt-12 pb-20">
+        <div className="pt-12 pb-24">
             <p className="mx-4 text-base font-bold uppercase xs:mx-6 xs:text-lg sm:mx-10 sm:text-xl md:mx-16 md:text-2xl lg:text-3xl">{ title }</p>
             <p className="mx-4 text-sm font-light xs:mx-6 xs:text-base sm:mx-10 sm:text-lg md:mx-16 md:text-xl lg:text-2xl">Opciones de { time }</p>
 
