@@ -35,7 +35,7 @@ export const ModalFood = ({ dish, onClose, open }) => (
                 >
                     <div className="relative transform transition-all">
                         <div className="rounded-full overflow-hidden">
-                            <img alt={dish.name} src={dish.img} />
+                            <img alt={dish.name} className="xs:w-96 xs:h-96 md:w-[32rem] md:h-[32rem]" src={dish.img} />
                         </div>
 
                         <button
