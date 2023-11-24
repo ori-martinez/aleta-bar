@@ -10,4 +10,9 @@ export const images = {
 }
 
 /* Secciones */
-export const sections = [ 'Para Comenzar', 'Hora del Sabor', 'Los Fuertes', 'Bebidas', ]
+export const sections = [
+    { title: 'Para Comenzar', },
+    { title: 'Hora del Sabor' },
+    { title: 'Los Fuertes' },
+    { title: 'Bebidas', },
+]
